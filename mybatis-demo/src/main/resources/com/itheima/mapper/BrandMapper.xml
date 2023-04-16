@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace:名称空间
+-->
+
+<mapper namespace="com.itheima.mapper.BrandMapper">
+
+    <select id="selectAll" resultType="Brand">
+        select id,brand_name brandName,company_name companyName,ordered,description,status from tb_brand;
+    </select>
+
+
+
+</mapper>
